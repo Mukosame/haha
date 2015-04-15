@@ -6,9 +6,113 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    FontSize="20">
+    <Page.BottomAppBar >
+        <CommandBar>
+            <AppBarButton Icon="Accept" Label="OK" Click="OKClick"/>
+        </CommandBar>
+    </Page.BottomAppBar>
 
-    <Grid>
+    <Grid Margin="10,10,10,10" VerticalAlignment="Top">
+        <!-- 0 -->
+        <Grid Margin="0,0,0,0" VerticalAlignment="Top">
 
+        <TextBlock TextWrapping="Wrap" Text="标题：" FontWeight="Bold" VerticalAlignment="Center"/>
+        <TextBox  Name="jzx" Margin="60,0,0,0" Width="90"  HorizontalAlignment="Left" PlaceholderText="江主席"/>
+        <TextBlock  Margin="160,0,0,0" TextWrapping="Wrap" Text="怒斥" FontWeight="Bold" VerticalAlignment="Center"/>
+            <TextBox Name="xgj"  Margin="210,0,0,0" Width="120" HorizontalAlignment="Left" PlaceholderText="香港记者"/>
+        </Grid>
+        
+        <Grid Margin="0,40,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!-- 0 -->
+        <TextBlock Grid.Row="0" Text="" FontWeight="Bold"/>
+
+        <!-- 1 -->
+        <TextBlock Grid.Row="1" Text="正文:" FontWeight="Bold"/>
+        <!-- 2 -->
+        <TextBlock Grid.Row="2" Margin="30,0,0,0" TextWrapping="Wrap" Text="1." VerticalAlignment="Center"/>
+            <TextBox Name="dxs"  Grid.Row="2" Margin="50,0,0,0" Width="200" HorizontalAlignment="Left" PlaceholderText="董先生连任"/>
+        <TextBlock Grid.Row="2" Margin="260,0,0,0" TextWrapping="Wrap" Text="好不好啊？" VerticalAlignment="Center"/>
+
+        <!-- 3-->
+        <TextBlock Grid.Row="3" Margin="30,0,0,0" TextWrapping="Wrap" Text="2."  VerticalAlignment="Center"/>
+            <TextBox Name="zy"  Grid.Row="3" Margin="50,0,0,0" Width="200" HorizontalAlignment="Left" PlaceholderText="中央"/>
+        <TextBlock Grid.Row="3" Margin="260,0,0,0" TextWrapping="Wrap" Text="也支持吗？" VerticalAlignment="Center"/>
+
+        <!-- 4 -->
+        <TextBlock Grid.Row="4" Margin="30,0,0,0" TextWrapping="Wrap" Text="3.会不会给人感觉是" VerticalAlignment="Center"/>
+            <TextBox Name="nmn" Grid.Row="4" Margin="212,0,0,0" Width="120" HorizontalAlignment="Left" PlaceholderText="你们内定钦点董先生"/>
+        <TextBlock Grid.Row="4" Margin="335,0,0,0" TextWrapping="Wrap" Text="啊？" VerticalAlignment="Center"/>
+
+        <!-- 5 -->
+        <TextBlock Grid.Row="5" Margin="30,0,0,0" TextWrapping="Wrap" Text="4.我不是要" VerticalAlignment="Center"/>
+            <TextBox Name="qd"  Grid.Row="5" Margin="132,0,0,0" Width="200" HorizontalAlignment="Left" PlaceholderText="钦定"/>
+
+        <!-- 6 -->
+        <TextBlock Grid.Row="6" Margin="30,0,0,0" TextWrapping="Wrap" Text="5.按照" VerticalAlignment="Center"/>
+            <TextBox Name="xgd"  Grid.Row="6" Margin="90,0,0,0" Width="140" HorizontalAlignment="Left" PlaceholderText="香港的基本法"/>
+        <TextBlock Grid.Row="6" Margin="235,0,0,0" TextWrapping="Wrap" Text="和"  VerticalAlignment="Center"/>
+            <TextBox Name="azx"  Grid.Row="6" Margin="260,0,0,0" Width="120" HorizontalAlignment="Left" PlaceholderText="按照选举法"/>
+
+        <!-- 7 -->
+        <TextBlock Grid.Row="7" Margin="30,0,0,0" TextWrapping="Wrap" Text="6." VerticalAlignment="Center"/>
+            <TextBox Name="xf"  Grid.Row="7" Margin="50,0,0,0" Width="70" HorizontalAlignment="Left" PlaceholderText="西方"/>
+        <TextBlock Grid.Row="7" Margin="125,0,0,0" TextWrapping="Wrap" Text="哪个"  VerticalAlignment="Center"/>
+            <TextBox Name="gj"  Grid.Row="7" Margin="168,0,0,0" Width="70" HorizontalAlignment="Left" PlaceholderText="国家"/>
+        <TextBlock Grid.Row="7" Margin="245,0,0,0" TextWrapping="Wrap" Text="我没"  VerticalAlignment="Center"/>
+            <TextBox Name="q" Grid.Row="7" Margin="290,0,0,0" Width="60" HorizontalAlignment="Left" PlaceholderText="去"/>
+        <TextBlock Grid.Row="7" Margin="353,0,0,0" TextWrapping="Wrap" Text="过"  VerticalAlignment="Center"/>
+
+        <!-- 8 -->
+        <TextBlock Grid.Row="8" Margin="30,0,0,0" TextWrapping="Wrap" Text="7." VerticalAlignment="Center"/>
+            <TextBox Name="mg"  Grid.Row="8" Margin="50,0,0,0" Width="70" HorizontalAlignment="Left" PlaceholderText="美国"/>
+        <TextBlock Grid.Row="8" Margin="125,0,0,0" TextWrapping="Wrap" Text="的"  VerticalAlignment="Center"/>
+            <TextBox Name="hls"  Grid.Row="8" Margin="150,0,0,0" Width="70" HorizontalAlignment="Left" PlaceholderText="华莱士"/>
+        <TextBlock Grid.Row="8" Margin="225,0,0,0" TextWrapping="Wrap" Text="比你们高到哪去"  VerticalAlignment="Center"/>
+
+        <!-- 9 -->
+        <TextBlock Grid.Row="9" Margin="30,0,0,0" TextWrapping="Wrap" Text="8.比" VerticalAlignment="Center"/>
+            <TextBox Name="xfj"  Grid.Row="9" Margin="70,0,0,0" Width="120" HorizontalAlignment="Left" PlaceholderText="西方记者"/>
+        <TextBlock Grid.Row="9" Margin="195,0,0,0" TextWrapping="Wrap" Text="跑得快"  VerticalAlignment="Center"/>
+
+        <!-- 10 -->
+        <TextBlock Grid.Row="10" Margin="30,0,0,0" TextWrapping="Wrap" Text="9.我今天作为一个" VerticalAlignment="Center"/>
+            <TextBox Name="zz"  Grid.Row="10" Margin="190,0,0,0" Width="120" HorizontalAlignment="Left" PlaceholderText="长者"/>
+
+        <!-- 11 -->
+        <TextBlock Grid.Row="11" Margin="30,0,0,0" TextWrapping="Wrap" Text="10." VerticalAlignment="Center"/>
+            <TextBox Name="dxs2"  Grid.Row="11" Margin="60,0,0,0" Width="90" HorizontalAlignment="Left" PlaceholderText="董先生"/>
+        <TextBlock Grid.Row="11" Margin="155,0,0,0" TextWrapping="Wrap" Text="现在是"  VerticalAlignment="Center"/>
+            <TextBox Name="ts"  Grid.Row="11" Margin="220,0,0,0" Width="70" HorizontalAlignment="Left" PlaceholderText="特首"/>
+
+        <!-- 12 -->
+        <TextBlock Grid.Row="12" Margin="30,0,0,0" TextWrapping="Wrap" Text="11." VerticalAlignment="Center"/>
+            <TextBox Name="lr"  Grid.Row="12" Margin="60,0,0,0" Width="90" HorizontalAlignment="Left" PlaceholderText="连任"/>
+        <TextBlock Grid.Row="12" Margin="155,0,0,0" TextWrapping="Wrap" Text="也要按照"  VerticalAlignment="Center"/>
+            <TextBox Name="xgdfl"  Grid.Row="12" Margin="240,0,0,0" Width="120" HorizontalAlignment="Left" PlaceholderText="香港的法律"/>
+        <!-- 13 -->
+        <TextBlock Grid.Row="13" Margin="30,0,0,0" TextWrapping="Wrap" Text="12.我们的" VerticalAlignment="Center"/>
+            <TextBox Name="jdq"  Grid.Row="13" Margin="120,0,0,0" Width="90" HorizontalAlignment="Left" PlaceholderText="决定权"/>
+        <TextBlock Grid.Row="13" Margin="215,0,0,0" TextWrapping="Wrap" Text="也是很重要的"  VerticalAlignment="Center"/>
+
+        </Grid>
+        
     </Grid>
 </Page>

@@ -28,7 +28,7 @@
         </StackPanel>
 
         <!--TODO: Content should be placed within the following grid-->
-        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,30,19,50">
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,20,19,50">
             <TextBox TextWrapping="Wrap" Name="textbox" VerticalAlignment="Stretch"/>
 
         </Grid>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="31979Mukosame.120910FAAB4BF" Publisher="CN=A51910E1-01F8-4697-9ECA-36EDA9D77739" Version="1.1.0.0" />
+  <Identity Name="31979Mukosame.120910FAAB4BF" Publisher="CN=A51910E1-01F8-4697-9ECA-36EDA9D77739" Version="1.1.0.1" />
   <mp:PhoneIdentity PhoneProductId="4a476beb-cca1-4eb2-a4f1-f1ee1b6ffcb0" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>图森破</DisplayName>

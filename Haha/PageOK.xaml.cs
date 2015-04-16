@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -101,6 +102,7 @@ namespace Haha
         {
             this.navigationHelper.OnNavigatedTo(e);
             textbox.Text = e.Parameter.ToString();
+
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)

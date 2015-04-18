@@ -3,7 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-
+using Windows.ApplicationModel.Email;
+using Windows.Security.ExchangeActiveSyncProvisioning;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -101,8 +102,8 @@ namespace Haha
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedTo(e);
-            textbox.Text = e.Parameter.ToString();
-
+            word = e.Parameter.ToString();
+            textbox.Text = word;
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
@@ -111,5 +112,14 @@ namespace Haha
         }
 
         #endregion
+
+        async void emailClick(object sender, RoutedEventArgs e)
+        {
+            EasClientDeviceInformation CurrentDeviceInfor = new Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation();
+            Windows.ApplicationModel.Email.EmailMessage mail = new Windows.ApplicationModel.Email.EmailMessage();
+            mail.Body = word;
+            await Windows.ApplicationModel.Email.EmailManager.ShowComposeNewEmailAsync(mail);
+        }
+
     }
 }

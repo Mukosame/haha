@@ -52,6 +52,7 @@ namespace Haha
 
         private void OKClick(object sender, RoutedEventArgs e)
         {
+            word = null;//clear
             
             if ( dxs.Text != "")
             {

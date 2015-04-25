@@ -10,6 +10,7 @@
     <Page.BottomAppBar>
         <CommandBar>
             <AppBarButton Icon="MailForward" Label="Email" Click="emailClick"/>
+            <AppBarButton Icon="Like" Label="Review" Click="reviewClick"/>
         </CommandBar>
     </Page.BottomAppBar>
 

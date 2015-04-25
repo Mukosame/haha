@@ -121,5 +121,11 @@ namespace Haha
             await Windows.ApplicationModel.Email.EmailManager.ShowComposeNewEmailAsync(mail);
         }
 
+        private async void reviewClick(object sender, RoutedEventArgs e)
+        {
+            await Windows.System.Launcher.LaunchUriAsync(
+    new Uri(string.Format("ms-windows-store:reviewapp?appid=" + "baa25aca-1b4d-4eec-9aac-76aaaa8f1518")));
+        }
+
     }
 }

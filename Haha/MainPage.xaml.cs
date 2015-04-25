@@ -30,6 +30,13 @@ namespace Haha
             this.InitializeComponent();
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
+            Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
+        }
+
+        private void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
+        {
+            if (!e.Handled && Frame.CurrentSourcePageType.FullName == "Haha.MainPage")
+                Application.Current.Exit();
         }
 
         /// <summary>
